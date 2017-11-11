@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 320px;
+}
+
+body {}
+
+input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    height: 38px;
+    font-weight: bold;
+    
+}
+input[type=text]
+{
+    text-align: center;
+}
+input[type=button],
+input[type=submit] {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #6173b5;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color: #a9ef1c;
+}
+
+
+/*Lobby*/
+
+#inicio {
+    display: block;
+    height: 500px;
+    background-color: #3a3535;
+    padding-top: 40%;
+}
+
+#inicio .titulo {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 25px;
+    color: #6173b5;
+    font-weight: 400;
+}
+
+
+/*Mesa*/
+
+#mesa {
+    display: none;
+    background-color: #533434;
+}
+
+#mesa #actividad {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    background-color: #6173b5;
+    padding: 5px;
+    font-family: sans-serif;
+    height: 38px;
+}
+
+#mesa #tablero {
+    background-color: #3a3535;
+    display: table;
+}
+
+#mesa #tablero .fila {
+    display: table-row;
+}
+
+#mesa #tablero .fila .celda {
+    display: table-cell;
+}
+
+#mesa #tablero .fila .celda,
+.dado {
+    width: 40px;
+    height: 40px;
+}
+
+.dado {
+    background-color: #D5BFD4;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.dado div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 23%;
+    z-index: 1;
+    position: absolute;
+}
+
+.dado div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    position: relative;
+    top: 0px;
+    z-index: 2;
+    padding-top: 54%;
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+#mesa #cubilete {
+    width: 100%;
+    background-color: #3a3535;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mesa #cubilete #dados {}
+
+#mesa #jugadores span {
+    display: inline-block;
+    padding: 5px;
+    margin: 1px;
+    background-color: #A86B6B;
+}
+
+
+/*Resultados*/
+
+#resultados {
+    display: none;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
+    <title>Phoebe's Games!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="inicio">
+        <div class="titulo">Phoebe's Games!</div>
+        <form action="" id='buscar_mesa'>
+            <input type="text" tabindex='1' id='nombre_jugador' placeholder="Ingrese su nombre">
+            <input type="submit" value='jugar'>
+        </form>
+    </div>
+    <div id="mesa">
+        <div id="actividad"></div>
+        <div id="tablero"></div>
+        <div id="cubilete">
+            <div id="dados"></div>
+        </div>
+        <form action="" id="rodar_dados">
+            <input type="submit" value="Rodar dados">
+        </form>
+        <div id="puntos_tablero"></div>
+        <form action="" id="estoy_listo">
+            <input type="submit" value="Listo">
+        </form>
+        <form action="" id="sumar_tablero">
+            <input type="submit" value="Enviar jugada">
+        </form>
+        <div id="jugadores"></div>
+    </div>
+    <div id="resultados"></div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.11.1.js"></script> -->
+<script src="temp.jquery-1.11.1.js"></script>
+<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="/client.js"></script>
+
+</html>

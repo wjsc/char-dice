@@ -1,2 +1,2 @@
 # char-dice
-Simple Char-Dice game
+Simple char-dice game in Express+socketIO
